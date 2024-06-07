@@ -40,9 +40,9 @@
                         <span class="text-secondary text-xs font-weight-bold">{{$client->phoneNumber}}</span>
                       </td>
                         <td class="align-end text-end text-sm px-1 ">
-                          <button type="button" class="btn btn-outline-info btn-sm m-0" data-bs-toggle="modal" data-bs-target="#editModal-{{ $client->id }}">Edit</button>
-                          <button type="button" class="btn btn-outline-danger btn-sm m-0" data-bs-toggle="modal" data-bs-target="#removeModal-{{ $client->id }}">Remove</button>
-                          <button type="button" class="btn btn-outline-dark btn-sm m-0" data-bs-toggle="modal" data-bs-target="#vehiclesModal-{{ $client->id }}">Vehicles</button>
+                          <button type="button" class="btn btn-outline-info btn-sm m-0 " data-bs-toggle="modal" data-bs-target="#editModal-{{ $client->id }}"><i class="fa-solid fa-pen-to-square" style="font-size:1.2rem;"></i></button>
+                          <button type="button" class="btn btn-outline-danger btn-sm m-0" data-bs-toggle="modal" data-bs-target="#removeModal-{{ $client->id }}"><i class="fa-solid fa-trash" style="font-size:1.2rem;"></i></button>
+                          <button type="button" class="btn btn-outline-dark btn-sm m-0" data-bs-toggle="modal" data-bs-target="#vehiclesModal-{{ $client->id }}"><i class="fa-solid fa-car" style="font-size:1.2rem;"></i></button>
                         </td>
                         {{-- remove modal --}}
                         <div class="modal fade" id="removeModal-{{ $client->id }}" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">

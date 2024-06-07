@@ -34,7 +34,7 @@ class PiecesRechangeController extends Controller
         $spartPart = PiecesRechange::create($spartData);
 
         if($spartPart){
-            return view('spartParts.index')->with(['succes' => 'spartPart added succesfully']);
+            return redirect()->route('spareParts.index')->with(['succes' => 'spartPart added succesfully']);
         }else{
             redirect()->back()->withErrors(['error' => 'error creating spartPart']);
         }
